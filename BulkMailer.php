@@ -31,7 +31,7 @@ class BulkMailer
         $message
         )
     {
-        $names = array_key($recipients);
+        $names = array_keys($recipients);
         $mail = new PHPMailer();
         $mail->isSMTP();
         $mail->Host = $host;
